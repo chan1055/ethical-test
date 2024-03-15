@@ -19,9 +19,9 @@ def answer():
     ans = request.form["options"]
     print(ans)
     if ans == "true":
-        return(render_template("correct.html"))
-    else:
         return(render_template("wrong.html"))
+    else:
+        return(render_template("correct.html"))
 
 @app.route("/end",methods=["GET","POST"])
 def end():  
